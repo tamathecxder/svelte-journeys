@@ -4,6 +4,8 @@
     let value = $state(0);
 </script>
 
+<a aria-label="input" href="/bindings/input">Navigate to input binding</a>
+
 <p>The current value is {value}</p>
 
 <Stepper
