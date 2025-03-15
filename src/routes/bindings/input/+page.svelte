@@ -2,6 +2,7 @@
 	let name = $state('world');
     let a = $state(1);
 	let b = $state(2);
+    let yes = $state(false);
 </script>
 
 <!-- Input Text -->
@@ -21,4 +22,10 @@
 </label>
 
 <p>{a} + {b} = {a + b}</p>
+
+<!-- Checkbox -->
+<label>
+	<input type="checkbox" bind:checked={yes} />
+	Yes! Send me regular email spam = {yes ? 'Great' : 'Ok, No Problem!'}
+</label>
 
