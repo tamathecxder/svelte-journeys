@@ -125,3 +125,10 @@
 		of {formatter.format(flavours)}
 	</p>
 {/if}
+
+<!-- Select Multiple -->
+<select multiple bind:value={flavours}>
+    {#each ['cookies and cream', 'mint', 'mengkudu'] as flavour}
+        <option>{flavour}</option>
+    {/each}
+</select>
