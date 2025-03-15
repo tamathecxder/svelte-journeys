@@ -2,10 +2,12 @@
 	let m = $state({ x: 0, y: 0 });
 </script>
 
+
 <div onpointermove={(event: any) => {
     m.x = event.clientX;
     m.y = event.clientY;
 }}>
+<a aria-label="capturing" href="/events/capturing">Navigate to capturing event</a>
 	The pointer is at {Math.round(m.x)} x {Math.round(m.y)}
 </div>
 
