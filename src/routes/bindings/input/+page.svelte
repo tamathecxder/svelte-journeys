@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang="ts">    
 	let name = $state('world');
     let a = $state(1);
 	let b = $state(2);
@@ -7,6 +7,7 @@
     let answer = $state('');
     let scoops = $state(1);
 	let flavours: any = $state([]);
+    let value = $state('Some words are *italic*')
 
 	const formatter = new Intl.ListFormat('en', { style: 'long', type: 'conjunction' });
 
@@ -132,3 +133,28 @@
         <option>{flavour}</option>
     {/each}
 </select>
+
+<!-- Textarea -->
+<div class="grid">
+	input
+	<textarea bind:value></textarea>
+
+	output
+	<div>{@html value}</div>
+</div>
+
+<style>
+	.grid {
+		display: grid;
+		grid-template-columns: 5em 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 1em;
+		height: 100%;
+	}
+
+	textarea {
+		flex: 1;
+		resize: none;
+	}
+</style>
+
