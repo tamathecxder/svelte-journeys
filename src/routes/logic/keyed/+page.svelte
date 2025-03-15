@@ -10,6 +10,8 @@
 	]);
 </script>
 
+<a aria-label="await" href="/logic/await">Navigate to await</a>
+
 <button onclick={() => things.shift()}>
 	Remove first thing
 </button>
