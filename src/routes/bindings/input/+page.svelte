@@ -33,6 +33,8 @@
     }
 </script>
 
+<a aria-label="class" href="/classes/class-attribute">Navigate to class attribute</a>
+
 <!-- Input Text -->
 <input bind:value={name} />
 
