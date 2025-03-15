@@ -4,6 +4,8 @@
     let promise = $state(roll());
 </script>
 
+<a aria-label="dom-events" href="/events/dom-events">Navigate to DOM Events</a>
+
 <button onclick={() => promise = roll()}>
     roll the dice
 </button>
