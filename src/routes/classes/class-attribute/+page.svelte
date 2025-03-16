@@ -1,4 +1,6 @@
 <script>
+	import Box from './Box.svelte';
+	
     let flipped = $state(false);
 </script>
 
@@ -20,6 +22,10 @@
             <div class="pattern"></div>
         </div>
     </button>
+
+	<Box --color="coral" />
+	<Box --color="gold" />
+	<Box --color="lime" />
 </div>
 
 
