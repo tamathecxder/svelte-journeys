@@ -5,6 +5,8 @@
 </script>
 
 <div class="container">
+	<a aria-label="use-directive" href="/actions/use-directive">Navigate to actions use directive</a>
+	
     Flip the card
 
     <button 
