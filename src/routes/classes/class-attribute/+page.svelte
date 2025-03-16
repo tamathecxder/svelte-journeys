@@ -5,7 +5,14 @@
 <div class="container">
     Flip the card
 
-    <button class={["card", { flipped }]} onclick={() => flipped = !flipped}>
+    <button 
+		class="card"
+		onclick={() => flipped = !flipped}
+		style:--bg-1="palegoldenrod"
+		style:--bg-2="black"
+		style:--bg-3="goldenrod"
+		style:transform={flipped ? 'rotateY(0)' : ''}
+		>
         <div class="front">
             <span class="symbol">*</span>
         </div>
